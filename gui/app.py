@@ -14,7 +14,6 @@ from gui.questions.cuisine import CuisinePage
 from gui.questions.dietary import DietaryPage
 from gui.questions.equipment import EquipmentPage
 from gui.questions.include_ingredients import IncludeIngredientsPage
-from gui.questions.budget import BudgetPage
 from gui.questions.healthy import HealthyPage
 
 
@@ -24,17 +23,14 @@ class RecipeRecommenderApp:
         self.root.title("Recipe Recommendation System")
         self.root.geometry("800x600")
 
-        # Initialize recommender with recipes data
         self.recommender = EnhancedRecipeRecommender(RECIPES)
         self.user_prefs = {}
 
-        # Create container frame
         self.container = tk.Frame(root)
         self.container.pack(side="top", fill="both", expand=True)
         self.container.grid_rowconfigure(0, weight=1)
         self.container.grid_columnconfigure(0, weight=1)
 
-        # Create all frames
         self.frames = {}
 
         for F in (
@@ -46,7 +42,6 @@ class RecipeRecommenderApp:
             AvoidIngredientsPage,
             IncludeIngredientsPage,
             EquipmentPage,
-            BudgetPage,
             HealthyPage,
             ResultsPage,
         ):
@@ -60,7 +55,7 @@ class RecipeRecommenderApp:
         frame = self.frames[cont]
 
         if isinstance(frame, EquipmentPage):
-            is_next = self.user_prefs["category"] in ["healthy", "budget"]
+            is_next = self.user_prefs["category"] in ["healthy"]
             frame.update_btn_txt(is_next)
 
         if isinstance(frame, ResultsPage):
@@ -83,18 +78,6 @@ class RecipeRecommenderApp:
                 IncludeIngredientsPage,
                 EquipmentPage,
                 HealthyPage,
-                ResultsPage,
-            ],
-            "budget": [
-                WelcomePage,
-                CategoryPage,
-                CookTimePage,
-                CuisinePage,
-                DietaryPage,
-                AvoidIngredientsPage,
-                IncludeIngredientsPage,
-                EquipmentPage,
-                BudgetPage,
                 ResultsPage,
             ],
         }
@@ -138,9 +121,7 @@ class RecipeRecommenderApp:
 
     def update_prefs(self, key, value):
         self.user_prefs[key] = value
-
-        print(self.user_prefs)
-
+        
     def get_user_prefs(self):
         return self.user_prefs
 

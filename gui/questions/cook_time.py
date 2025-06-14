@@ -27,7 +27,6 @@ class CookTimePage(tk.Frame):
         )
         desc.pack(pady=10)
 
-        # Navigation buttons
         nav_frame = tk.Frame(container)
         nav_frame.pack(side="bottom", pady=20)
 

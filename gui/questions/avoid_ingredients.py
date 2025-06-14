@@ -20,7 +20,6 @@ class AvoidIngredientsPage(tk.Frame):
         self.avoid_entry = ttk.Entry(container, width=40, font=("Arial", 13))
         self.avoid_entry.pack(pady=10, ipady=6)
 
-        # Navigation buttons
         nav_frame = tk.Frame(container)
         nav_frame.pack(side="bottom", pady=20)
 

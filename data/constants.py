@@ -26,6 +26,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 5,
         "equipment_needed": ["grill", "mixing bowl", "spatula"],
+        "freezer_friendly": False,
+        "servings": 4,
     },
     {
         "name": "Ratatouille",
@@ -53,6 +55,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 8,
         "equipment_needed": ["oven", "baking dish", "knife"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Spaghetti Carbonara",
@@ -78,6 +82,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 6,
         "equipment_needed": ["pot", "pan", "whisk"],
+        "freezer_friendly": False,
+        "servings": 4,
     },
     {
         "name": "Hummus",
@@ -103,6 +109,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 8,
         "equipment_needed": ["food processor", "spatula"],
+        "freezer_friendly": True,
+        "servings": 8,
     },
     {
         "name": "Chicken Pot Pie",
@@ -131,6 +139,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 6,
         "equipment_needed": ["oven", "pie dish", "saucepan"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Croque Monsieur",
@@ -157,6 +167,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 5,
         "equipment_needed": ["oven", "saucepan", "whisk"],
+        "freezer_friendly": False,
+        "servings": 2,
     },
     {
         "name": "Margherita Pizza",
@@ -181,6 +193,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 6,
         "equipment_needed": ["oven", "pizza stone", "rolling pin"],
+        "freezer_friendly": True,
+        "servings": 4,
     },
     {
         "name": "Falafel",
@@ -208,6 +222,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 8,
         "equipment_needed": ["food processor", "skillet"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "New York Cheesecake",
@@ -234,6 +250,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 3,
         "equipment_needed": ["springform pan", "mixer", "oven"],
+        "freezer_friendly": True,
+        "servings": 8,
     },
     {
         "name": "Bouillabaisse",
@@ -261,6 +279,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 8,
         "equipment_needed": ["large pot", "ladle"],
+        "freezer_friendly": False,
+        "servings": 6,
     },
     {
         "name": "Tabbouleh",
@@ -287,6 +307,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 9,
         "equipment_needed": ["mixing bowl", "knife"],
+        "freezer_friendly": False,
+        "servings": 6,
     },
     {
         "name": "Beef Bourguignon",
@@ -313,6 +335,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 7,
         "equipment_needed": ["dutch oven", "knife"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Chicken Parmesan",
@@ -339,6 +363,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 6,
         "equipment_needed": ["oven", "skillet", "meat mallet"],
+        "freezer_friendly": True,
+        "servings": 4,
     },
     {
         "name": "Avocado Toast",
@@ -365,6 +391,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 8,
         "equipment_needed": ["toaster", "mixing bowl"],
+        "freezer_friendly": False,
+        "servings": 2,
     },
     {
         "name": "Baklava",
@@ -390,6 +418,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 4,
         "equipment_needed": ["baking dish", "brush"],
+        "freezer_friendly": True,
+        "servings": 12,
     },
     {
         "name": "French Onion Soup",
@@ -415,6 +445,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 6,
         "equipment_needed": ["soup pot", "oven-safe bowls"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Lobster Roll",
@@ -440,6 +472,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 5,
         "equipment_needed": ["mixing bowl", "skillet"],
+        "freezer_friendly": False,
+        "servings": 4,
     },
     {
         "name": "Pasta Primavera",
@@ -467,6 +501,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 8,
         "equipment_needed": ["pot", "skillet"],
+        "freezer_friendly": False,
+        "servings": 4,
     },
     {
         "name": "Shakshuka",
@@ -494,6 +530,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 8,
         "equipment_needed": ["skillet", "lid"],
+        "freezer_friendly": False,
+        "servings": 4,
     },
     {
         "name": "Croissant",
@@ -506,6 +544,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 4,
         "equipment_needed": ["oven", "rolling pin"],
+        "freezer_friendly": True,
+        "servings": 8,
     },
     {
         "name": "Buffalo Wings",
@@ -531,6 +571,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 5,
         "equipment_needed": ["oven", "baking sheet", "mixing bowl"],
+        "freezer_friendly": True,
+        "servings": 4,
     },
     {
         "name": "Risotto alla Milanese",
@@ -557,6 +599,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 6,
         "equipment_needed": ["saucepan", "wooden spoon"],
+        "freezer_friendly": False,
+        "servings": 4,
     },
     {
         "name": "Fattoush Salad",
@@ -583,6 +627,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 9,
         "equipment_needed": ["mixing bowl", "knife"],
+        "freezer_friendly": False,
+        "servings": 6,
     },
     {
         "name": "Quiche Lorraine",
@@ -608,6 +654,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 5,
         "equipment_needed": ["pie dish", "oven", "mixing bowl"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Philly Cheesesteak",
@@ -633,6 +681,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 5,
         "equipment_needed": ["grill", "spatula"],
+        "freezer_friendly": False,
+        "servings": 4,
     },
     {
         "name": "Osso Buco",
@@ -659,6 +709,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 7,
         "equipment_needed": ["dutch oven", "knife"],
+        "freezer_friendly": True,
+        "servings": 4,
     },
     {
         "name": "Moussaka",
@@ -685,6 +737,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 6,
         "equipment_needed": ["baking dish", "skillet"],
+        "freezer_friendly": True,
+        "servings": 8,
     },
     {
         "name": "Crème Brûlée",
@@ -703,6 +757,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 3,
         "equipment_needed": ["ramekins", "torch", "mixing bowl"],
+        "freezer_friendly": False,
+        "servings": 6,
     },
     {
         "name": "Cobb Salad",
@@ -729,6 +785,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 7,
         "equipment_needed": ["knife", "mixing bowl"],
+        "freezer_friendly": False,
+        "servings": 4,
     },
     {
         "name": "Panna Cotta",
@@ -747,6 +805,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 4,
         "equipment_needed": ["ramekins", "saucepan"],
+        "freezer_friendly": False,
+        "servings": 6,
     },
     {
         "name": "Mansaf",
@@ -771,6 +831,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 6,
         "equipment_needed": ["large pot", "serving platter"],
+        "freezer_friendly": True,
+        "servings": 8,
     },
     {
         "name": "Reuben Sandwich",
@@ -796,6 +858,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 5,
         "equipment_needed": ["skillet", "spatula"],
+        "freezer_friendly": False,
+        "servings": 2,
     },
     {
         "name": "Niçoise Salad",
@@ -823,6 +887,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 8,
         "equipment_needed": ["pot", "skillet", "mixing bowl"],
+        "freezer_friendly": False,
+        "servings": 4,
     },
     {
         "name": "Arancini",
@@ -848,6 +914,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 5,
         "equipment_needed": ["deep fryer", "mixing bowl"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Knafeh",
@@ -872,6 +940,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 4,
         "equipment_needed": ["baking dish", "saucepan"],
+        "freezer_friendly": True,
+        "servings": 8,
     },
     {
         "name": "Jambalaya",
@@ -899,6 +969,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 7,
         "equipment_needed": ["dutch oven", "wooden spoon"],
+        "freezer_friendly": True,
+        "servings": 8,
     },
     {
         "name": "Duck à l'Orange",
@@ -924,6 +996,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 7,
         "equipment_needed": ["skillet", "saucepan"],
+        "freezer_friendly": False,
+        "servings": 4,
     },
     {
         "name": "Minestrone Soup",
@@ -951,6 +1025,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 9,
         "equipment_needed": ["soup pot", "ladle"],
+        "freezer_friendly": True,
+        "servings": 8,
     },
     {
         "name": "Mujadara",
@@ -969,6 +1045,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 9,
         "equipment_needed": ["pot", "skillet"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Pulled Pork Sandwich",
@@ -993,6 +1071,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 5,
         "equipment_needed": ["slow cooker", "basting brush"],
+        "freezer_friendly": True,
+        "servings": 8,
     },
     {
         "name": "Salade Lyonnaise",
@@ -1018,6 +1098,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 7,
         "equipment_needed": ["skillet", "pot"],
+        "freezer_friendly": False,
+        "servings": 4,
     },
     {
         "name": "Panzanella",
@@ -1044,6 +1126,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 8,
         "equipment_needed": ["mixing bowl", "knife"],
+        "freezer_friendly": False,
+        "servings": 6,
     },
     {
         "name": "Maqluba",
@@ -1069,6 +1153,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 7,
         "equipment_needed": ["pot with lid", "plate"],
+        "freezer_friendly": True,
+        "servings": 8,
     },
     {
         "name": "Clam Chowder",
@@ -1095,6 +1181,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 6,
         "equipment_needed": ["soup pot", "ladle"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Tarte Tatin",
@@ -1113,6 +1201,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 4,
         "equipment_needed": ["oven-safe skillet", "oven"],
+        "freezer_friendly": True,
+        "servings": 8,
     },
     {
         "name": "Bruschetta",
@@ -1138,6 +1228,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 7,
         "equipment_needed": ["oven", "mixing bowl"],
+        "freezer_friendly": False,
+        "servings": 6,
     },
     {
         "name": "Labneh",
@@ -1162,6 +1254,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 8,
         "equipment_needed": ["cheesecloth", "strainer"],
+        "freezer_friendly": False,
+        "servings": 4,
     },
     {
         "name": "Cajun Shrimp and Grits",
@@ -1187,6 +1281,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 6,
         "equipment_needed": ["saucepan", "skillet"],
+        "freezer_friendly": True,
+        "servings": 4,
     },
     {
         "name": "Soupe à l'Oignon",
@@ -1211,6 +1307,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 6,
         "equipment_needed": ["soup pot", "oven-safe bowls"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Cacio e Pepe",
@@ -1235,6 +1333,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 5,
         "equipment_needed": ["pot", "skillet"],
+        "freezer_friendly": False,
+        "servings": 4,
     },
     {
         "name": "Shawarma",
@@ -1261,6 +1361,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 6,
         "equipment_needed": ["grill", "knife"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Monte Cristo Sandwich",
@@ -1287,6 +1389,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 4,
         "equipment_needed": ["skillet", "spatula"],
+        "freezer_friendly": False,
+        "servings": 2,
     },
     {
         "name": "Confit de Canard",
@@ -1305,6 +1409,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 6,
         "equipment_needed": ["oven-safe dish", "oven"],
+        "freezer_friendly": True,
+        "servings": 4,
     },
     {
         "name": "Saltimbocca",
@@ -1330,6 +1436,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 7,
         "equipment_needed": ["skillet", "meat mallet"],
+        "freezer_friendly": False,
+        "servings": 4,
     },
     {
         "name": "Kebab",
@@ -1355,6 +1463,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 7,
         "equipment_needed": ["grill", "skewers"],
+        "freezer_friendly": True,
+        "servings": 4,
     },
     {
         "name": "Chicken Fried Steak",
@@ -1380,6 +1490,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 4,
         "equipment_needed": ["skillet", "meat mallet"],
+        "freezer_friendly": False,
+        "servings": 4,
     },
     {
         "name": "Tarte Flambée",
@@ -1404,6 +1516,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 5,
         "equipment_needed": ["oven", "baking sheet"],
+        "freezer_friendly": False,
+        "servings": 4,
     },
     {
         "name": "Ribolitta",
@@ -1431,6 +1545,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 9,
         "equipment_needed": ["soup pot", "ladle"],
+        "freezer_friendly": True,
+        "servings": 8,
     },
     {
         "name": "Ful Medames",
@@ -1457,6 +1573,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 9,
         "equipment_needed": ["pot", "mixing bowl"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Bananas Foster",
@@ -1482,6 +1600,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 3,
         "equipment_needed": ["skillet", "lighter"],
+        "freezer_friendly": False,
+        "servings": 4,
     },
     {
         "name": "Coq au Vin",
@@ -1508,6 +1628,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 7,
         "equipment_needed": ["dutch oven", "knife"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Pasta e Fagioli",
@@ -1535,6 +1657,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 8,
         "equipment_needed": ["soup pot", "ladle"],
+        "freezer_friendly": True,
+        "servings": 8,
     },
     {
         "name": "Warak Enab",
@@ -1561,6 +1685,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 8,
         "equipment_needed": ["pot", "plate"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Buttermilk Pancakes",
@@ -1587,6 +1713,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 5,
         "equipment_needed": ["griddle", "mixing bowl"],
+        "freezer_friendly": True,
+        "servings": 4,
     },
     {
         "name": "Cobb Salad",
@@ -1613,6 +1741,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 7,
         "equipment_needed": ["knife", "mixing bowl"],
+        "freezer_friendly": False,
+        "servings": 4,
     },
     {
         "name": "Chili Con Carne",
@@ -1639,6 +1769,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 7,
         "equipment_needed": ["dutch oven", "wooden spoon"],
+        "freezer_friendly": True,
+        "servings": 8,
     },
     {
         "name": "Key Lime Pie",
@@ -1663,6 +1795,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 3,
         "equipment_needed": ["pie dish", "mixer"],
+        "freezer_friendly": True,
+        "servings": 8,
     },
     {
         "name": "Cornbread",
@@ -1689,6 +1823,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 5,
         "equipment_needed": ["baking pan", "mixing bowl"],
+        "freezer_friendly": True,
+        "servings": 8,
     },
     {
         "name": "Clam Bake",
@@ -1715,6 +1851,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 7,
         "equipment_needed": ["large pot", "steamer basket"],
+        "freezer_friendly": False,
+        "servings": 6,
     },
     {
         "name": "Fried Green Tomatoes",
@@ -1735,6 +1873,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 4,
         "equipment_needed": ["skillet", "tongs"],
+        "freezer_friendly": False,
+        "servings": 4,
     },
     {
         "name": "Sloppy Joes",
@@ -1761,6 +1901,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 5,
         "equipment_needed": ["skillet", "spatula"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Pecan Pie",
@@ -1787,6 +1929,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 3,
         "equipment_needed": ["pie dish", "oven"],
+        "freezer_friendly": True,
+        "servings": 8,
     },
     {
         "name": "Gumbo",
@@ -1814,6 +1958,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 7,
         "equipment_needed": ["dutch oven", "wooden spoon"],
+        "freezer_friendly": True,
+        "servings": 8,
     },
     {
         "name": "Quenelles",
@@ -1839,6 +1985,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 6,
         "equipment_needed": ["food processor", "poaching pan"],
+        "freezer_friendly": False,
+        "servings": 4,
     },
     {
         "name": "Salade Niçoise",
@@ -1866,6 +2014,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 8,
         "equipment_needed": ["pot", "skillet", "mixing bowl"],
+        "freezer_friendly": False,
+        "servings": 4,
     },
     {
         "name": "Boeuf en Daube",
@@ -1892,6 +2042,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 7,
         "equipment_needed": ["dutch oven", "knife"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Gougères",
@@ -1910,6 +2062,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 4,
         "equipment_needed": ["saucepan", "piping bag"],
+        "freezer_friendly": True,
+        "servings": 12,
     },
     {
         "name": "Sole Meunière",
@@ -1928,6 +2082,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 8,
         "equipment_needed": ["skillet", "spatula"],
+        "freezer_friendly": False,
+        "servings": 2,
     },
     {
         "name": "Pissaladière",
@@ -1953,6 +2109,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 7,
         "equipment_needed": ["baking sheet", "skillet"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Cassoulet",
@@ -1979,6 +2137,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 6,
         "equipment_needed": ["dutch oven", "wooden spoon"],
+        "freezer_friendly": True,
+        "servings": 8,
     },
     {
         "name": "Tarte aux Pommes",
@@ -2004,6 +2164,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 4,
         "equipment_needed": ["tart pan", "oven"],
+        "freezer_friendly": True,
+        "servings": 8,
     },
     {
         "name": "Soupe au Pistou",
@@ -2031,6 +2193,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 8,
         "equipment_needed": ["soup pot", "ladle"],
+        "freezer_friendly": True,
+        "servings": 8,
     },
     {
         "name": "Canelés",
@@ -2057,6 +2221,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 3,
         "equipment_needed": ["canelé molds", "oven"],
+        "freezer_friendly": True,
+        "servings": 12,
     },
     {
         "name": "Osso Buco",
@@ -2083,6 +2249,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 7,
         "equipment_needed": ["dutch oven", "knife"],
+        "freezer_friendly": True,
+        "servings": 4,
     },
     {
         "name": "Pappa al Pomodoro",
@@ -2108,6 +2276,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 7,
         "equipment_needed": ["soup pot", "wooden spoon"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Vitello Tonnato",
@@ -2133,6 +2303,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 7,
         "equipment_needed": ["roasting pan", "food processor"],
+        "freezer_friendly": False,
+        "servings": 6,
     },
     {
         "name": "Gnocchi alla Sorrentina",
@@ -2158,6 +2330,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 6,
         "equipment_needed": ["baking dish", "pot"],
+        "freezer_friendly": True,
+        "servings": 4,
     },
     {
         "name": "Bucatini all'Amatriciana",
@@ -2183,6 +2357,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 6,
         "equipment_needed": ["pot", "skillet"],
+        "freezer_friendly": False,
+        "servings": 4,
     },
     {
         "name": "Caponata",
@@ -2209,6 +2385,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 8,
         "equipment_needed": ["skillet", "wooden spoon"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Zuppa Inglese",
@@ -2233,6 +2411,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 3,
         "equipment_needed": ["trifle dish", "mixer"],
+        "freezer_friendly": False,
+        "servings": 8,
     },
     {
         "name": "Fritto Misto",
@@ -2259,6 +2439,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 5,
         "equipment_needed": ["deep fryer", "spider strainer"],
+        "freezer_friendly": False,
+        "servings": 4,
     },
     {
         "name": "Risotto ai Funghi",
@@ -2285,6 +2467,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 7,
         "equipment_needed": ["saucepan", "wooden spoon"],
+        "freezer_friendly": False,
+        "servings": 4,
     },
     {
         "name": "Panforte",
@@ -2311,6 +2495,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 4,
         "equipment_needed": ["springform pan", "oven"],
+        "freezer_friendly": True,
+        "servings": 12,
     },
     {
         "name": "Kousa Mahshi",
@@ -2337,6 +2523,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 8,
         "equipment_needed": ["pot", "knife"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Fatteh",
@@ -2363,6 +2551,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 7,
         "equipment_needed": ["skillet", "mixing bowl"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Mulukhiyah",
@@ -2382,6 +2572,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 8,
         "equipment_needed": ["pot", "ladle"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Sfiha",
@@ -2407,6 +2599,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 6,
         "equipment_needed": ["oven", "baking sheet"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Qatayef",
@@ -2433,6 +2627,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 4,
         "equipment_needed": ["griddle", "mixing bowl"],
+        "freezer_friendly": True,
+        "servings": 12,
     },
     {
         "name": "Mandi",
@@ -2458,6 +2654,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 6,
         "equipment_needed": ["pressure cooker", "serving platter"],
+        "freezer_friendly": True,
+        "servings": 8,
     },
     {
         "name": "Fasolia",
@@ -2478,6 +2676,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 8,
         "equipment_needed": ["pot", "wooden spoon"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Basbousa",
@@ -2503,6 +2703,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 4,
         "equipment_needed": ["baking dish", "saucepan"],
+        "freezer_friendly": True,
+        "servings": 12,
     },
     {
         "name": "Kibbeh Nayeh",
@@ -2528,6 +2730,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 6,
         "equipment_needed": ["food processor", "knife"],
+        "freezer_friendly": False,
+        "servings": 6,
     },
     {
         "name": "Jareesh",
@@ -2546,6 +2750,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 7,
         "equipment_needed": ["pot", "wooden spoon"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Chicken and Waffles",
@@ -2572,6 +2778,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 4,
         "equipment_needed": ["deep fryer", "waffle iron", "mixing bowls"],
+        "freezer_friendly": False,
+        "servings": 4,
     },
     {
         "name": "Lobster Roll",
@@ -2598,6 +2806,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 6,
         "equipment_needed": ["mixing bowl", "skillet"],
+        "freezer_friendly": False,
+        "servings": 4,
     },
     {
         "name": "Philly Cheesesteak",
@@ -2623,6 +2833,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 5,
         "equipment_needed": ["grill", "spatula"],
+        "freezer_friendly": False,
+        "servings": 4,
     },
     {
         "name": "Cincinnati Chili",
@@ -2649,6 +2861,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 5,
         "equipment_needed": ["dutch oven", "pot"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Shrimp and Grits",
@@ -2674,6 +2888,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 6,
         "equipment_needed": ["saucepan", "skillet"],
+        "freezer_friendly": True,
+        "servings": 4,
     },
     {
         "name": "Steak Frites",
@@ -2700,6 +2916,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 6,
         "equipment_needed": ["cast iron skillet", "baking sheet", "deep fryer"],
+        "freezer_friendly": False,
+        "servings": 2,
     },
     {
         "name": "Salade Landaise",
@@ -2719,6 +2937,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 6,
         "equipment_needed": ["skillet", "salad bowl"],
+        "freezer_friendly": False,
+        "servings": 2,
     },
     {
         "name": "Gigot d'Agneau",
@@ -2744,6 +2964,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 7,
         "equipment_needed": ["roasting pan", "meat thermometer"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Tarte aux Poireaux",
@@ -2769,6 +2991,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 6,
         "equipment_needed": ["tart pan", "oven"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Soupe à l'Oignon",
@@ -2793,6 +3017,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 6,
         "equipment_needed": ["soup pot", "oven-safe bowls"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Saltimbocca alla Romana",
@@ -2811,6 +3037,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 7,
         "equipment_needed": ["skillet", "meat mallet"],
+        "freezer_friendly": False,
+        "servings": 4,
     },
     {
         "name": "Pappa al Pomodoro",
@@ -2836,6 +3064,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 7,
         "equipment_needed": ["soup pot", "wooden spoon"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Arancini",
@@ -2854,6 +3084,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 5,
         "equipment_needed": ["deep fryer", "mixing bowl"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Ribolita",
@@ -2881,6 +3113,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 9,
         "equipment_needed": ["soup pot", "ladle"],
+        "freezer_friendly": True,
+        "servings": 8,
     },
     {
         "name": "Tiramisu",
@@ -2906,6 +3140,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 4,
         "equipment_needed": ["mixing bowls", "whisk", "baking dish"],
+        "freezer_friendly": False,
+        "servings": 8,
     },
     {
         "name": "Kousa Mahshi",
@@ -2932,6 +3168,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 8,
         "equipment_needed": ["pot", "knife"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Fatteh",
@@ -2958,6 +3196,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 7,
         "equipment_needed": ["skillet", "mixing bowl"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Mulukhiyah",
@@ -2977,6 +3217,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 8,
         "equipment_needed": ["pot", "ladle"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Sfiha",
@@ -3002,6 +3244,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 6,
         "equipment_needed": ["oven", "baking sheet"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Qatayef",
@@ -3028,6 +3272,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 4,
         "equipment_needed": ["griddle", "mixing bowl"],
+        "freezer_friendly": True,
+        "servings": 12,
     },
     {
         "name": "Buffalo Chicken Dip",
@@ -3053,6 +3299,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 4,
         "equipment_needed": ["baking dish", "mixing bowl"],
+        "freezer_friendly": True,
+        "servings": 8,
     },
     {
         "name": "Corn Dog",
@@ -3065,6 +3313,8 @@ RECIPES = [
         "meal_prep_friendly": False,
         "health_score": 3,
         "equipment_needed": ["deep fryer", "skewers"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Petit Salé aux Lentilles",
@@ -3090,6 +3340,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 7,
         "equipment_needed": ["dutch oven", "wooden spoon"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Tarte Tropézienne",
@@ -3114,6 +3366,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 4,
         "equipment_needed": ["baking sheet", "mixer"],
+        "freezer_friendly": True,
+        "servings": 8,
     },
     {
         "name": "Pizzoccheri",
@@ -3133,6 +3387,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 6,
         "equipment_needed": ["pot", "skillet"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Sbrisolona",
@@ -3158,6 +3414,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 4,
         "equipment_needed": ["baking pan", "mixing bowl"],
+        "freezer_friendly": True,
+        "servings": 12,
     },
     {
         "name": "Shanklish",
@@ -3183,6 +3441,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 6,
         "equipment_needed": ["mixing bowl", "knife"],
+        "freezer_friendly": True,
+        "servings": 6,
     },
     {
         "name": "Qidreh",
@@ -3208,6 +3468,8 @@ RECIPES = [
         "meal_prep_friendly": True,
         "health_score": 7,
         "equipment_needed": ["clay pot", "oven"],
+        "freezer_friendly": True,
+        "servings": 8,
     },
     {
         "name": "Ultimate Protein Bowl",
@@ -3225,6 +3487,9 @@ RECIPES = [
         "cost_rating": 3,
         "health_score": 9,
         "meal_prep_friendly": True,
+        "equipment_needed": ["mixing bowl"],
+        "freezer_friendly": False,
+        "servings": 1,
     },
 ]
 

@@ -39,7 +39,6 @@ class CategoryPage(tk.Frame):
             )
             rb.pack(anchor="w", padx=10, pady=5)
 
-        # Navigation buttons
         nav_frame = tk.Frame(container)
         nav_frame.pack(side="bottom", pady=20)
 

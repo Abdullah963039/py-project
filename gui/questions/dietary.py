@@ -27,7 +27,6 @@ class DietaryPage(tk.Frame):
             cb.pack(anchor="w", padx=50, pady=5)
             self.diet_vars[diet] = var
 
-        # Navigation buttons
         nav_frame = tk.Frame(container)
         nav_frame.pack(side="bottom", pady=20)
 

@@ -10,7 +10,6 @@ class ResultsPage(tk.Frame):
         self.controller = controller
         self.prefs = {}
 
-        # Configure style for cards (same as before)
         style = ttk.Style()
         style.configure(
             "Card.TFrame", background="white", borderwidth=1, relief="solid"
@@ -39,14 +38,12 @@ class ResultsPage(tk.Frame):
         )
         style.configure("Details.TFrame", background="white", borderwidth=0, padding=2)
 
-        # Create canvas and scrollbar
         self.canvas = tk.Canvas(self, bg="#f0f0f0")
         self.scrollbar = ttk.Scrollbar(
             self, orient="vertical", command=self.canvas.yview
         )
         self.scrollable_frame = ttk.Frame(self.canvas)
 
-        # Configure canvas scrolling
         self.scrollable_frame.bind(
             "<Configure>",
             lambda e: self.canvas.configure(scrollregion=self.canvas.bbox("all")),
@@ -63,14 +60,11 @@ class ResultsPage(tk.Frame):
         self.canvas.pack(side="left", fill="both", expand=True)
         self.scrollbar.pack(side="right", fill="y")
 
-        # Bind mousewheel to canvas
         self.canvas.bind_all("<MouseWheel>", self._on_mousewheel)
 
         if self.prefs:
-            # Display results
             self.display_results()
 
-            # Centered restart button
             restart_frame = ttk.Frame(self.scrollable_frame)
             restart_frame.pack(pady=20)
 
@@ -82,7 +76,6 @@ class ResultsPage(tk.Frame):
             restart_btn.pack()
 
     def _on_mousewheel(self, event):
-        # For Windows and MacOS (with mouse support)
         if event.num == 4 or event.delta > 0:
             self.canvas.yview_scroll(-1, "units")
         elif event.num == 5 or event.delta < 0:
@@ -103,7 +96,6 @@ class ResultsPage(tk.Frame):
         card = ttk.Frame(container, style="Card.TFrame", padding=15)
         card.pack(fill="x", pady=10, ipadx=10, ipady=10)
 
-        # Header with name and score
         header_frame = ttk.Frame(card, style="Details.TFrame")
         header_frame.pack(fill="x", pady=(0, 10))
 
@@ -115,7 +107,6 @@ class ResultsPage(tk.Frame):
             header_frame, text=f"Score: {score:.1f}/10", style="Label.TLabel"
         ).pack(side="right")
 
-        # Details grid
         details_frame = ttk.Frame(card)
         details_frame.pack(fill="x", pady=5)
 
@@ -135,7 +126,6 @@ class ResultsPage(tk.Frame):
         if recipe.get("meal_prep_friendly", False):
             self.__create_detail_row(card, "Meal Prep:", "✓ Friendly")
 
-        # Dietary tags
         tags_frame = ttk.Frame(card)
         tags_frame.pack(fill="x", pady=(10, 0))
 
@@ -159,7 +149,6 @@ class ResultsPage(tk.Frame):
             no_results.pack(pady=20)
             return
 
-        # Centered title container
         title_frame = ttk.Frame(self.scrollable_frame)
         title_frame.pack(fill="x", pady=20)
 
@@ -177,13 +166,10 @@ class ResultsPage(tk.Frame):
         )
         sub_title.pack(pady=5)
 
-        # Center all cards using a container frame
         cards_container = ttk.Frame(self.scrollable_frame)
         cards_container.pack(fill="x", padx=50)
 
-        # Display all recommendations
         for recipe, score in recommendations:
-            # Card frame with white background
             self.__create_card(cards_container, recipe, score)
 
     def update_prefs(self, prefs):
@@ -192,7 +178,7 @@ class ResultsPage(tk.Frame):
     def get_recommendations(self):
         recommender = self.controller.get_recommender()
         recommendations = [r for r in recommender.recommend(self.prefs) if r[1] > 0]
-        
+
         top_recipes = sorted(recommendations, key=lambda x: x[1], reverse=True)[:5]
 
         return top_recipes

@@ -9,7 +9,6 @@ class CuisinePage(tk.Frame):
         tk.Frame.__init__(self, parent)
         self.controller = controller
 
-        # Main centered container
         container = tk.Frame(self)
         container.place(relx=0.5, rely=0.5, anchor="center")
 
@@ -22,11 +21,9 @@ class CuisinePage(tk.Frame):
 
         self.cuisine_vars = {}
 
-        # Create 3 columns for checkboxes
         columns_frame = tk.Frame(container)
         columns_frame.pack(pady=10)
 
-        # Split into 3 columns
         num_columns = 3
         chunk_size = len(CUISINES) // num_columns + (
             1 if len(CUISINES) % num_columns else 0

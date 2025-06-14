@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
 
-from gui.questions.budget import BudgetPage
 from gui.questions.healthy import HealthyPage
 from gui.results import ResultsPage
 
@@ -32,7 +31,6 @@ class EquipmentPage(tk.Frame):
             fg="#504D4D",
         )
         sublabel.pack(pady=5)
-        
 
     def next_action(self):
         equipment_text = self.equipment_entry.get().strip()
@@ -45,9 +43,6 @@ class EquipmentPage(tk.Frame):
         match category:
             case "healthy":
                 self.controller.show_frame(HealthyPage)
-
-            case "budget":
-                self.controller.show_frame(BudgetPage)
 
             case _:
                 self.controller.show_frame(ResultsPage)

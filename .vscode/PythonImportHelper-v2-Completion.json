@@ -57,22 +57,6 @@
         "documentation": {}
     },
     {
-        "label": "messagebox",
-        "importPath": "tkinter",
-        "description": "tkinter",
-        "isExtraImport": true,
-        "detail": "tkinter",
-        "documentation": {}
-    },
-    {
-        "label": "ttk",
-        "importPath": "tkinter",
-        "description": "tkinter",
-        "isExtraImport": true,
-        "detail": "tkinter",
-        "documentation": {}
-    },
-    {
         "label": "ttk",
         "importPath": "tkinter",
         "description": "tkinter",
@@ -150,22 +134,6 @@
         "description": "data.constants",
         "isExtraImport": true,
         "detail": "data.constants",
-        "documentation": {}
-    },
-    {
-        "label": "BudgetPage",
-        "importPath": "gui.questions.budget",
-        "description": "gui.questions.budget",
-        "isExtraImport": true,
-        "detail": "gui.questions.budget",
-        "documentation": {}
-    },
-    {
-        "label": "BudgetPage",
-        "importPath": "gui.questions.budget",
-        "description": "gui.questions.budget",
-        "isExtraImport": true,
-        "detail": "gui.questions.budget",
         "documentation": {}
     },
     {
@@ -320,7 +288,7 @@
         "kind": 6,
         "importPath": "engine.inferance",
         "description": "engine.inferance",
-        "peekOfCode": "class EnhancedRecipeRecommender:\n    def __init__(self, recipes):\n        self.recipes = recipes\n        self.health_indicators = {\n            \"balanced\": {\n                \"protein_range\": (20, 40),\n                \"carb_range\": (30, 50),\n                \"fat_range\": (10, 20),\n            },\n            \"low_carb\": {\"max_carbs\": 25},",
+        "peekOfCode": "class EnhancedRecipeRecommender:\n    def __init__(self, recipes):\n        self.recipes = recipes\n    def recommend(self, preferences):\n        recommended = []\n        for recipe in self.recipes:\n            score = 0\n            skip = False\n            if not self._passes_base_rules(recipe, preferences):\n                continue",
         "detail": "engine.inferance",
         "documentation": {}
     },
@@ -331,15 +299,6 @@
         "description": "gui.questions.avoid_ingredients",
         "peekOfCode": "class AvoidIngredientsPage(tk.Frame):\n    def __init__(self, parent, controller):\n        tk.Frame.__init__(self, parent)\n        self.controller = controller\n        container = tk.Frame(self)\n        container.place(relx=0.5, rely=0.5, anchor=\"center\")\n        label = tk.Label(\n            container,\n            text=\"Any ingredients to avoid? (comma separated)\",\n            font=(\"Arial\", 14),",
         "detail": "gui.questions.avoid_ingredients",
-        "documentation": {}
-    },
-    {
-        "label": "BudgetPage",
-        "kind": 6,
-        "importPath": "gui.questions.budget",
-        "description": "gui.questions.budget",
-        "peekOfCode": "class BudgetPage(tk.Frame):\n    def __init__(self, parent, controller):\n        tk.Frame.__init__(self, parent)\n        self.controller = controller\n        container = tk.Frame(self)\n        container.place(relx=0.5, rely=0.5, anchor=\"center\")\n        label = tk.Label(\n            container,\n            text=\"Budget level:\",\n            font=(\"Arial\", 14),",
-        "detail": "gui.questions.budget",
         "documentation": {}
     },
     {
@@ -365,7 +324,7 @@
         "kind": 6,
         "importPath": "gui.questions.cuisine",
         "description": "gui.questions.cuisine",
-        "peekOfCode": "class CuisinePage(tk.Frame):\n    def __init__(self, parent, controller):\n        tk.Frame.__init__(self, parent)\n        self.controller = controller\n        # Main centered container\n        container = tk.Frame(self)\n        container.place(relx=0.5, rely=0.5, anchor=\"center\")\n        label = tk.Label(\n            container,\n            text=\"Preferred cuisines (select all that apply)\",",
+        "peekOfCode": "class CuisinePage(tk.Frame):\n    def __init__(self, parent, controller):\n        tk.Frame.__init__(self, parent)\n        self.controller = controller\n        container = tk.Frame(self)\n        container.place(relx=0.5, rely=0.5, anchor=\"center\")\n        label = tk.Label(\n            container,\n            text=\"Preferred cuisines (select all that apply)\",\n            font=(\"Arial\", 14),",
         "detail": "gui.questions.cuisine",
         "documentation": {}
     },
@@ -410,7 +369,7 @@
         "kind": 6,
         "importPath": "gui.app",
         "description": "gui.app",
-        "peekOfCode": "class RecipeRecommenderApp:\n    def __init__(self, root):\n        self.root = root\n        self.root.title(\"Recipe Recommendation System\")\n        self.root.geometry(\"800x600\")\n        # Initialize recommender with recipes data\n        self.recommender = EnhancedRecipeRecommender(RECIPES)\n        self.user_prefs = {}\n        # Create container frame\n        self.container = tk.Frame(root)",
+        "peekOfCode": "class RecipeRecommenderApp:\n    def __init__(self, root):\n        self.root = root\n        self.root.title(\"Recipe Recommendation System\")\n        self.root.geometry(\"800x600\")\n        self.recommender = EnhancedRecipeRecommender(RECIPES)\n        self.user_prefs = {}\n        self.container = tk.Frame(root)\n        self.container.pack(side=\"top\", fill=\"both\", expand=True)\n        self.container.grid_rowconfigure(0, weight=1)",
         "detail": "gui.app",
         "documentation": {}
     },
@@ -419,7 +378,7 @@
         "kind": 6,
         "importPath": "gui.results",
         "description": "gui.results",
-        "peekOfCode": "class ResultsPage(tk.Frame):\n    def __init__(self, parent, controller):\n        tk.Frame.__init__(self, parent)\n        self.controller = controller\n        self.prefs = {}\n        # Configure style for cards (same as before)\n        style = ttk.Style()\n        style.configure(\n            \"Card.TFrame\", background=\"white\", borderwidth=1, relief=\"solid\"\n        )",
+        "peekOfCode": "class ResultsPage(tk.Frame):\n    def __init__(self, parent, controller):\n        tk.Frame.__init__(self, parent)\n        self.controller = controller\n        self.prefs = {}\n        style = ttk.Style()\n        style.configure(\n            \"Card.TFrame\", background=\"white\", borderwidth=1, relief=\"solid\"\n        )\n        style.configure(",
         "detail": "gui.results",
         "documentation": {}
     },
