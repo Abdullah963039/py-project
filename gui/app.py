@@ -3,6 +3,7 @@ import tkinter as tk
 from data.constants import RECIPES
 from engine.inferance import EnhancedRecipeRecommender
 
+
 from gui.results import ResultsPage
 from gui.welcome import WelcomePage
 
@@ -13,6 +14,8 @@ from gui.questions.cuisine import CuisinePage
 from gui.questions.dietary import DietaryPage
 from gui.questions.equipment import EquipmentPage
 from gui.questions.include_ingredients import IncludeIngredientsPage
+from gui.questions.budget import BudgetPage
+from gui.questions.healthy import HealthyPage
 
 
 class RecipeRecommenderApp:
@@ -33,6 +36,7 @@ class RecipeRecommenderApp:
 
         # Create all frames
         self.frames = {}
+
         for F in (
             WelcomePage,
             CategoryPage,
@@ -42,6 +46,8 @@ class RecipeRecommenderApp:
             AvoidIngredientsPage,
             IncludeIngredientsPage,
             EquipmentPage,
+            BudgetPage,
+            HealthyPage,
             ResultsPage,
         ):
             frame = F(self.container, self)
@@ -52,6 +58,11 @@ class RecipeRecommenderApp:
 
     def show_frame(self, cont):
         frame = self.frames[cont]
+
+        if isinstance(frame, EquipmentPage):
+            is_next = self.user_prefs["category"] in ["healthy", "budget"]
+            frame.update_btn_txt(is_next)
+
         if isinstance(frame, ResultsPage):
             frame.update_prefs(self.get_user_prefs())
             frame.display_results()
@@ -59,17 +70,50 @@ class RecipeRecommenderApp:
         frame.tkraise()
 
     def get_next_frame(self, current_frame):
-        frame_order = [
-            WelcomePage,
-            CategoryPage,
-            CookTimePage,
-            CuisinePage,
-            DietaryPage,
-            AvoidIngredientsPage,
-            IncludeIngredientsPage,
-            EquipmentPage,
-            ResultsPage,
-        ]
+        category = self.user_prefs["category"]
+
+        frame_orders = {
+            "healthy": [
+                WelcomePage,
+                CategoryPage,
+                CookTimePage,
+                CuisinePage,
+                DietaryPage,
+                AvoidIngredientsPage,
+                IncludeIngredientsPage,
+                EquipmentPage,
+                HealthyPage,
+                ResultsPage,
+            ],
+            "budget": [
+                WelcomePage,
+                CategoryPage,
+                CookTimePage,
+                CuisinePage,
+                DietaryPage,
+                AvoidIngredientsPage,
+                IncludeIngredientsPage,
+                EquipmentPage,
+                BudgetPage,
+                ResultsPage,
+            ],
+        }
+
+        frame_order = frame_orders.get(
+            category,
+            [
+                WelcomePage,
+                CategoryPage,
+                CookTimePage,
+                CuisinePage,
+                DietaryPage,
+                AvoidIngredientsPage,
+                IncludeIngredientsPage,
+                EquipmentPage,
+                ResultsPage,
+            ],
+        )
+
         current_index = frame_order.index(current_frame)
         if current_index < len(frame_order) - 1:
             return frame_order[current_index + 1]

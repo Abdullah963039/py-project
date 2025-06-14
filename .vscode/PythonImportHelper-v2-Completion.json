@@ -57,6 +57,14 @@
         "documentation": {}
     },
     {
+        "label": "messagebox",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
         "label": "ttk",
         "importPath": "tkinter",
         "description": "tkinter",
@@ -66,6 +74,30 @@
     },
     {
         "label": "ttk",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "ttk",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "ttk",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "messagebox",
         "importPath": "tkinter",
         "description": "tkinter",
         "isExtraImport": true,
@@ -118,6 +150,38 @@
         "description": "data.constants",
         "isExtraImport": true,
         "detail": "data.constants",
+        "documentation": {}
+    },
+    {
+        "label": "BudgetPage",
+        "importPath": "gui.questions.budget",
+        "description": "gui.questions.budget",
+        "isExtraImport": true,
+        "detail": "gui.questions.budget",
+        "documentation": {}
+    },
+    {
+        "label": "BudgetPage",
+        "importPath": "gui.questions.budget",
+        "description": "gui.questions.budget",
+        "isExtraImport": true,
+        "detail": "gui.questions.budget",
+        "documentation": {}
+    },
+    {
+        "label": "HealthyPage",
+        "importPath": "gui.questions.healthy",
+        "description": "gui.questions.healthy",
+        "isExtraImport": true,
+        "detail": "gui.questions.healthy",
+        "documentation": {}
+    },
+    {
+        "label": "HealthyPage",
+        "importPath": "gui.questions.healthy",
+        "description": "gui.questions.healthy",
+        "isExtraImport": true,
+        "detail": "gui.questions.healthy",
         "documentation": {}
     },
     {
@@ -270,6 +334,15 @@
         "documentation": {}
     },
     {
+        "label": "BudgetPage",
+        "kind": 6,
+        "importPath": "gui.questions.budget",
+        "description": "gui.questions.budget",
+        "peekOfCode": "class BudgetPage(tk.Frame):\n    def __init__(self, parent, controller):\n        tk.Frame.__init__(self, parent)\n        self.controller = controller\n        container = tk.Frame(self)\n        container.place(relx=0.5, rely=0.5, anchor=\"center\")\n        label = tk.Label(\n            container,\n            text=\"Budget level:\",\n            font=(\"Arial\", 14),",
+        "detail": "gui.questions.budget",
+        "documentation": {}
+    },
+    {
         "label": "CategoryPage",
         "kind": 6,
         "importPath": "gui.questions.category",
@@ -310,8 +383,17 @@
         "kind": 6,
         "importPath": "gui.questions.equipment",
         "description": "gui.questions.equipment",
-        "peekOfCode": "class EquipmentPage(tk.Frame):\n    def __init__(self, parent, controller):\n        tk.Frame.__init__(self, parent)\n        self.controller = controller\n        container = tk.Frame(self)\n        container.place(relx=0.5, rely=0.5, anchor=\"center\")\n        label = tk.Label(\n            container,\n            text=\"What cooking equipment do you have available? (comma separated)\",\n            font=(\"Arial\", 14),",
+        "peekOfCode": "class EquipmentPage(tk.Frame):\n    def __init__(self, parent, controller):\n        tk.Frame.__init__(self, parent)\n        self.controller = controller\n        self.btn_txt = \"Get Recommendations\"\n        self.container = tk.Frame(self)\n        self.container.place(relx=0.5, rely=0.5, anchor=\"center\")\n        label = tk.Label(\n            self.container,\n            text=\"What cooking equipment do you have available? (comma separated)\",",
         "detail": "gui.questions.equipment",
+        "documentation": {}
+    },
+    {
+        "label": "HealthyPage",
+        "kind": 6,
+        "importPath": "gui.questions.healthy",
+        "description": "gui.questions.healthy",
+        "peekOfCode": "class HealthyPage(tk.Frame):\n    def __init__(self, parent, controller):\n        tk.Frame.__init__(self, parent)\n        self.controller = controller\n        container = tk.Frame(self)\n        container.place(relx=0.5, rely=0.5, anchor=\"center\")\n        label = tk.Label(\n            container,\n            text=\"Health focus?\",\n            font=(\"Arial\", 14),",
+        "detail": "gui.questions.healthy",
         "documentation": {}
     },
     {
@@ -337,7 +419,7 @@
         "kind": 6,
         "importPath": "gui.results",
         "description": "gui.results",
-        "peekOfCode": "class ResultsPage(tk.Frame):\n    def __init__(self, parent, controller):\n        tk.Frame.__init__(self, parent)\n        self.controller = controller\n        # Configure style for cards (same as before)\n        style = ttk.Style()\n        style.configure(\n            \"Card.TFrame\", background=\"white\", borderwidth=1, relief=\"solid\"\n        )\n        style.configure(",
+        "peekOfCode": "class ResultsPage(tk.Frame):\n    def __init__(self, parent, controller):\n        tk.Frame.__init__(self, parent)\n        self.controller = controller\n        self.prefs = {}\n        # Configure style for cards (same as before)\n        style = ttk.Style()\n        style.configure(\n            \"Card.TFrame\", background=\"white\", borderwidth=1, relief=\"solid\"\n        )",
         "detail": "gui.results",
         "documentation": {}
     },

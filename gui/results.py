@@ -8,6 +8,7 @@ class ResultsPage(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
         self.controller = controller
+        self.prefs = {}
 
         # Configure style for cards (same as before)
         style = ttk.Style()
@@ -65,26 +66,20 @@ class ResultsPage(tk.Frame):
         # Bind mousewheel to canvas
         self.canvas.bind_all("<MouseWheel>", self._on_mousewheel)
 
-        # Get all recommendations with score > 0
-        self.recommendations = [
-            r
-            for r in controller.recommender.recommend(controller.user_prefs)
-            if r[1] > 0
-        ]
+        if self.prefs:
+            # Display results
+            self.display_results()
 
-        # Display results
-        self.display_results()
+            # Centered restart button
+            restart_frame = ttk.Frame(self.scrollable_frame)
+            restart_frame.pack(pady=20)
 
-        # Centered restart button
-        restart_frame = ttk.Frame(self.scrollable_frame)
-        restart_frame.pack(pady=20)
-
-        restart_btn = ttk.Button(
-            restart_frame,
-            text="Start Over",
-            command=lambda: controller.show_frame(WelcomePage),
-        )
-        restart_btn.pack()
+            restart_btn = ttk.Button(
+                restart_frame,
+                text="Start Over",
+                command=lambda: controller.show_frame(WelcomePage),
+            )
+            restart_btn.pack()
 
     def _on_mousewheel(self, event):
         # For Windows and MacOS (with mouse support)
@@ -149,7 +144,13 @@ class ResultsPage(tk.Frame):
         self.__create_detail_row(card, "Ingredients:", ", ".join(recipe["ingredients"]))
 
     def display_results(self):
-        if not self.recommendations:
+        category = self.prefs.get("category")
+        recommendations = self.get_recommendations()
+
+        if not category:
+            return None
+
+        if not recommendations:
             no_results = ttk.Label(
                 self.scrollable_frame,
                 text="No recipes found matching your criteria",
@@ -169,14 +170,9 @@ class ResultsPage(tk.Frame):
         )
         title.pack()
 
-        category = (
-            self.controller.user_prefs.get("category", "high_protein")
-            .replace("_", " ")
-            .title()
-        )
         sub_title = ttk.Label(
             title_frame,
-            text=f"Based on: {category} preferences",
+            text=f"Based on: {category.replace('_', ' ').capitalize()} preferences",
             font=("Arial", 11, "bold"),
         )
         sub_title.pack(pady=5)
@@ -186,6 +182,17 @@ class ResultsPage(tk.Frame):
         cards_container.pack(fill="x", padx=50)
 
         # Display all recommendations
-        for recipe, score in self.recommendations:
+        for recipe, score in recommendations:
             # Card frame with white background
             self.__create_card(cards_container, recipe, score)
+
+    def update_prefs(self, prefs):
+        self.prefs = prefs
+
+    def get_recommendations(self):
+        recommender = self.controller.get_recommender()
+        recommendations = [r for r in recommender.recommend(self.prefs) if r[1] > 0]
+        
+        top_recipes = sorted(recommendations, key=lambda x: x[1], reverse=True)[:5]
+
+        return top_recipes
