@@ -55,6 +55,6 @@ class EquipmentPage(tk.Frame):
         equipment_text = self.equipment_entry.get().strip()
         if equipment_text:
             equipment_list = [eq.strip() for eq in equipment_text.split(",")]
-            self.controller.user_prefs["available_equipment"] = equipment_list
+            self.controller.update_prefs("available_equipment", equipment_list)
 
         self.controller.show_frame(ResultsPage)

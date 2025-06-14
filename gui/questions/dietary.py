@@ -49,7 +49,7 @@ class DietaryPage(tk.Frame):
     def next_page(self):
         selected_diets = [diet for diet, var in self.diet_vars.items() if var.get()]
         if selected_diets:
-            self.controller.user_prefs["dietary_restrictions"] = selected_diets
+            self.controller.update_prefs("dietary_restrictions", selected_diets)
 
         next_frame = self.controller.get_next_frame(DietaryPage)
         self.controller.show_frame(next_frame)

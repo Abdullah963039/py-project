@@ -17,7 +17,9 @@ class CookTimePage(tk.Frame):
         )
         label.pack(pady=20)
 
-        self.cook_time_entry = ttk.Entry(container, width=40, font=("Arial", 13), justify="center")
+        self.cook_time_entry = ttk.Entry(
+            container, width=40, font=("Arial", 13), justify="center"
+        )
         self.cook_time_entry.pack(pady=10, ipady=6)
 
         desc = tk.Label(
@@ -48,7 +50,7 @@ class CookTimePage(tk.Frame):
                 cook_time = int(cook_time)
                 if cook_time <= 0:
                     raise ValueError
-                self.controller.user_prefs["max_cook_time"] = cook_time
+                self.controller.update_prefs("max_cook_time", cook_time)
             except ValueError:
                 messagebox.showerror("Invalid Input", "Please enter a positive number")
                 return

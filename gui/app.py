@@ -15,7 +15,6 @@ from gui.questions.equipment import EquipmentPage
 from gui.questions.include_ingredients import IncludeIngredientsPage
 
 
-
 class RecipeRecommenderApp:
     def __init__(self, root):
         self.root = root
@@ -53,6 +52,10 @@ class RecipeRecommenderApp:
 
     def show_frame(self, cont):
         frame = self.frames[cont]
+        if isinstance(frame, ResultsPage):
+            frame.update_prefs(self.get_user_prefs())
+            frame.display_results()
+
         frame.tkraise()
 
     def get_next_frame(self, current_frame):
@@ -88,3 +91,14 @@ class RecipeRecommenderApp:
         if current_index > 0:
             return frame_order[current_index - 1]
         return None
+
+    def update_prefs(self, key, value):
+        self.user_prefs[key] = value
+
+        print(self.user_prefs)
+
+    def get_user_prefs(self):
+        return self.user_prefs
+
+    def get_recommender(self):
+        return self.recommender

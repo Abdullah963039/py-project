@@ -43,7 +43,7 @@ class IncludeIngredientsPage(tk.Frame):
         include_text = self.include_entry.get().strip()
         if include_text:
             include_list = [ing.strip() for ing in include_text.split(",")]
-            self.controller.user_prefs["ingredient_preferences"] = include_list
+            self.controller.update_prefs("ingredient_preferences", include_list)
 
         next_frame = self.controller.get_next_frame(IncludeIngredientsPage)
         self.controller.show_frame(next_frame)

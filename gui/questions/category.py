@@ -56,6 +56,6 @@ class CategoryPage(tk.Frame):
             messagebox.showwarning("Selection Required", "Please select a category")
             return
 
-        self.controller.user_prefs["category"] = self.category_var.get()
+        self.controller.update_prefs("category", self.category_var.get())
         next_frame = self.controller.get_next_frame(CategoryPage)
         self.controller.show_frame(next_frame)

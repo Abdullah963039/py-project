@@ -43,7 +43,7 @@ class AvoidIngredientsPage(tk.Frame):
         avoid_text = self.avoid_entry.get().strip()
         if avoid_text:
             avoid_list = [ing.strip() for ing in avoid_text.split(",")]
-            self.controller.user_prefs["ingredient_avoidances"] = avoid_list
+            self.controller.update_prefs("ingredient_avoidances", avoid_list)
 
         next_frame = self.controller.get_next_frame(AvoidIngredientsPage)
         self.controller.show_frame(next_frame)

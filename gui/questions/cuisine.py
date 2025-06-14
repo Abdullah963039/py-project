@@ -35,7 +35,6 @@ class CuisinePage(tk.Frame):
             CUISINES[i : i + chunk_size] for i in range(0, len(CUISINES), chunk_size)
         ]
 
-        # Create columns
         for column in chunks:
             col_frame = tk.Frame(columns_frame)
             col_frame.pack(side="left", padx=20)
@@ -46,7 +45,6 @@ class CuisinePage(tk.Frame):
                 cb.pack(anchor="w", padx=5, pady=2)
                 self.cuisine_vars[cuisine] = var
 
-        # Centered navigation buttons
         nav_frame = tk.Frame(container)
         nav_frame.pack(pady=20)
 
@@ -69,7 +67,7 @@ class CuisinePage(tk.Frame):
             if var.get()
         ]
         if selected_cuisines:
-            self.controller.user_prefs["cuisine_pref"] = selected_cuisines
+            self.controller.update_prefs("cuisine_pref", selected_cuisines)
 
         next_frame = self.controller.get_next_frame(CuisinePage)
         self.controller.show_frame(next_frame)

@@ -225,11 +225,11 @@
         "documentation": {}
     },
     {
-        "label": "RULES",
+        "label": "RECIPES",
         "kind": 5,
         "importPath": "data.constants",
         "description": "data.constants",
-        "peekOfCode": "RULES = [\n    {\n        \"name\": \"ingredient_overlap_rule\",\n        \"condition\": lambda pref, recipe: \"available_ingredients\" in pref,\n        \"action\": lambda pref, recipe: {  \n            \"reason\": \"Uses available ingredients\",\n            \"score_boost\": len(\n                [\n                    ing\n                    for ing in recipe[\"ingredients\"]",
+        "peekOfCode": "RECIPES = [\n    {\n        \"name\": \"Classic Beef Burger\",\n        \"ingredients\": [\n            \"ground beef\",\n            \"hamburger buns\",\n            \"lettuce\",\n            \"tomato\",\n            \"onion\",\n            \"cheese\",",
         "detail": "data.constants",
         "documentation": {}
     },
@@ -238,7 +238,7 @@
         "kind": 5,
         "importPath": "data.constants",
         "description": "data.constants",
-        "peekOfCode": "CUISINES = [\n    \"French\",\n    \"Indian\",\n    \"Mediterranean\",\n    \"Italian\",\n    \"American\",\n    \"Mexican\",\n    \"Middle eastern\",\n    \"Chinese\",\n    \"Japanese\",",
+        "peekOfCode": "CUISINES = [\n    \"French\",\n    \"Mediterranean\",\n    \"Italian\",\n    \"American\",\n]\n# Available Diet Tags\nDIETARY_TAGS = [\"non-vegan\", \"vegan\", \"vegetarian\", \"gluten-free\", \"high-protein\"]",
         "detail": "data.constants",
         "documentation": {}
     },
@@ -247,34 +247,7 @@
         "kind": 5,
         "importPath": "data.constants",
         "description": "data.constants",
-        "peekOfCode": "DIETARY_TAGS = [\"non-vegan\", \"vegan\", \"vegetarian\"]\nCOOKING_TIME = (10, 120)  # (Min, Max)\nPROTIEN = (2, 55)\nCALORIES = (150, 850)",
-        "detail": "data.constants",
-        "documentation": {}
-    },
-    {
-        "label": "COOKING_TIME",
-        "kind": 5,
-        "importPath": "data.constants",
-        "description": "data.constants",
-        "peekOfCode": "COOKING_TIME = (10, 120)  # (Min, Max)\nPROTIEN = (2, 55)\nCALORIES = (150, 850)",
-        "detail": "data.constants",
-        "documentation": {}
-    },
-    {
-        "label": "PROTIEN",
-        "kind": 5,
-        "importPath": "data.constants",
-        "description": "data.constants",
-        "peekOfCode": "PROTIEN = (2, 55)\nCALORIES = (150, 850)",
-        "detail": "data.constants",
-        "documentation": {}
-    },
-    {
-        "label": "CALORIES",
-        "kind": 5,
-        "importPath": "data.constants",
-        "description": "data.constants",
-        "peekOfCode": "CALORIES = (150, 850)",
+        "peekOfCode": "DIETARY_TAGS = [\"non-vegan\", \"vegan\", \"vegetarian\", \"gluten-free\", \"high-protein\"]",
         "detail": "data.constants",
         "documentation": {}
     },
